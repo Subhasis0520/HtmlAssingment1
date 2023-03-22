@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Instragram</title>
+    <!-- Font Awesome -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- MDB -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.2.0/mdb.min.css"
+      rel="stylesheet"
+    />
+
+    <style>
+      .card-body {
+        display: inline-block;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- As a heading -->
+    <nav class="navbar navbar-light bg-success">
+      <div class="container-fluid">
+        <span class="navbar-brand mb-0 h1">Likes & Dislikes App</span>
+      </div>
+    </nav>
+
+    <div class="container">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Likes</h5>
+          <button
+            type="button"
+            class="btn btn-primary"
+            onclick="likeInc() "
+            id="like"
+          >
+            <i class="fas fa-thumbs-up"></i> <span id="display1"></span>
+          </button>
+          <h5 class="card-title">Dislikes</h5>
+          <button
+            type="button"
+            class="btn btn-primary"
+            id="dislike"
+            onclick=" disLikeInc();"
+          >
+            <i class="fas fa-thumbs-down"></i> <span id="display2"></span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <footer class="bg-light text-center text-lg-start">
+      <!-- Copyright -->
+      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+        Total:
+        <a class="text-dark" href="https://mdbootstrap.com/">
+          <span id="display3" value="total();"></span>
+        </a>
+      </div>
+      <!-- Copyright -->
+    </footer>
+
+    <script>
+      let spanTage1 = document.querySelector("#display1");
+      let likes = 0;
+      let xyz = localStorage.getItem("like") ? localStorage.getItem("like") : 0;
+      spanTage1.innerText = xyz;
+      localStorage.setItem("like", xyz);
+
+      function likeInc() {
+        xyz++;
+        localStorage.setItem("like", xyz);
+        spanTage1.innerText = ocalStorage.getItem("like");
+      }
+
+      let spanTage2 = document.querySelector("#display2");
+      let disLikes = 0;
+      let abc = localStorage.getItem("dislike")
+        ? localStorage.getItem("dislike")
+        : 0;
+      spanTage2.innerText = abc;
+      localStorage.setItem("dislike", abc);
+
+      function disLikeInc() {
+        abc++;
+        localStorage.setItem("dislike", abc);
+        spanTage2.innerText = localStorage.getItem("dislike");
+      }
+
+      let spanTage3 = document.querySelector("#display3");
+      let a = 0;
+      spanTage3.innerText = a;
+      function total() {
+        let a = abc + xyz;
+        spanTage3.innerText = a;
+      }
+    </script>
+  </body>
+</html>

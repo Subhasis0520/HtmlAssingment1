@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Advanced Table</title>
+    <style>
+        table,th, td {
+            border: 2px solid blue;
+            border-collapse: collapse;
+            border-collapse: inherit;
+        }
+        th,td{
+            color:ghostwhite;
+        }
+        .a{
+          text-align: left;
+        }
+        table{
+            background-image: url("IMAGE/Ass4.jpeg");
+            transition: linear 0.2ms;
+        }
+        caption{
+            font-size: 25px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif, Haettenschweiler, 'Arial Narrow Bold', Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+    </style>
+</head>
+
+<body>
+    <table width="60%">
+        <caption>Advanced HTML tag for Table</caption>
+        <thead>
+            <tr>
+                <th colspan="5">Purchase order:987654321</th>
+                <th colspan="3">Tutorialbrain- 10thOct 2020</th>
+
+            </tr>
+
+
+            <tr style="height:20px ;">
+                <th colspan="4" class="a" width="50%" >
+                    Vender: <br>
+                    ABC XYZ ltd <br>
+                    DUMMY STREET <br>
+                    BUILDING 123 <br>
+                    HAZARIBAGH <br>
+                </th>
+                <th colspan="4" class="a" >
+                    SHIP TO: <br>
+                    MS DHONI <br>
+                    WILSON GARDEN <br>
+                    SOUTHEAST BLOCK,RANCHI-834001 <br>
+                </th>
+            </tr>
+
+
+            <tr>
+                <th>Qty.</th>
+                <th colspan="3">Item code.</th>
+                <th>Description</th>
+                <th colspan="3"> Unit Price</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>100</td>
+                <td colspan="3">LABCDE</td>
+                <td>Pencils</td>
+                <td colspan="3"> 20.00</td>
+            </tr>
+
+
+            <tr>
+                <td>1000</td>
+                <td colspan="3">IN877</td>
+                <td>Notebooks</td>
+                <td colspan="3"> 100.00</td>
+            </tr>
+
+
+            <tr>
+                <td>500</td>
+                <td colspan="3">IP8675</td>
+                <td>Pens</td>
+                <td colspan="3"> 70.00</td>
+            </tr>
+        </tbody>
+
+
+        <tfoot>
+            <tr>
+                <th colspan="5" class="b">Subtotal</th>
+                <td colspan="3">190.00</td>
+            </tr>
+
+
+            <tr>
+                <th colspan="4">GST</th>
+                <td>5%</td>
+                <td colspan="3">9.50</td>
+            </tr>
+
+
+            <tr>
+                <th colspan="5">Grand Total</th>
+                <td colspan="3">$ 199.50</td>
+            </tr>
+        </tfoot>
+
+
+    </table>
+
+</body>
+
+</html>

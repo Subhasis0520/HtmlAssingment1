@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Jump</title>
+    <style>
+        body {
+            background-color: black;
+            margin: 200px 0 0 400px;
+        }
+
+        h1 {
+            width: fit-content;
+        }
+
+        span {
+            background-color: ghostwhite;
+            padding: 5px;
+            border-radius: 50%;
+            position: relative;
+            animation-name: jump;
+            animation-direction: alternate;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+            animation-duration: 2s;
+        }
+
+        span:nth-child(1) {
+            color: violet;
+            animation-delay: 1s;
+        }
+
+        span:nth-child(2) {
+            color: indigo;
+            animation-delay: 2s;
+        }
+
+        span:nth-child(3) {
+            color: blue;
+            animation-delay: 3s;
+        }
+
+        span:nth-child(4) {
+            color: green;
+            animation-delay: 4s;
+        }
+
+        span:nth-child(5) {
+            color: yellow;
+            animation-delay: 5s;
+        }
+
+        span:nth-child(6) {
+            color: orange;
+            animation-delay: 6s;
+        }
+
+        span:nth-child(7) {
+            color: red;
+            animation-delay: 7s;
+        }
+
+        span:nth-child(8) {
+            color: cornflowerblue;
+            animation-delay: 8s;
+        }
+        @keyframes jump {
+            from{
+                top: 0px;
+            }
+            to{
+                top: 200px;
+            }
+            
+        }
+    </style>
+</head>
+
+<body>
+    <h1>
+        <span>J</span>
+        <span>S</span>
+        <span>P</span>
+        <span>I</span>
+        <span>D</span>
+        <span>E</span>
+        <span>R</span>
+        <span>S</span>
+    </h1>
+</body>
+
+</html>

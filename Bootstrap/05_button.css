@@ -1,0 +1,18 @@
+.bg-primary, .btn-primary{
+    background: linear-gradient(45deg,black,rgb(40, 40, 183))!important;
+}
+.bg-secondary, .btn-secondary{
+    background: linear-gradient(45deg,black,papayawhip)!important;
+}
+.bg-success, .btn-success{
+    background: linear-gradient(45deg,black,lightgreen)!important;
+}
+.bg-info, .btn-info{
+    background: linear-gradient(45deg,black,purple)!important;
+}
+.bg-danger, .btn-danger{
+    background: linear-gradient(45deg,black,lightcoral)!important;
+}
+.bg-warning, .btn-warning{
+    background: linear-gradient(45deg,black,seagreen)!important;
+}

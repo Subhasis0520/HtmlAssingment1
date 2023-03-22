@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom Properties</title>
+</head>
+<body>
+    <h1>Dom Properties</h1>
+    <a href="" id="link">Likes</a>
+
+    <script>
+        // to fetch what is inside head tag
+        let headTag = document.head;
+        console.log(headTag);
+
+        // to fetch what is inside body tag
+        let bodyTag = document.body;
+        console.log(bodyTag);
+
+        // to fetch what is inside titel tag
+        let titleTag = document.title;
+        console.log(titleTag);
+
+        let anchoreTag = document.body.a;
+        console.log(anchoreTag); // undefined
+
+        anchoreTag = document.getElementById("link");
+        console.log(anchoreTag);
+      
+    </script>
+</body>
+</html>

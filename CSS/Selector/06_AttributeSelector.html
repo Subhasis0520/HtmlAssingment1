@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Attribute Selector</title>
+    <style>
+        [align]{
+            border: 2px solid red;
+            color: ghostwhite;
+        }
+        [align="center"]{
+            color: ghostwhite;
+            background-color: black;
+        }
+        [align="left"]{
+            text-shadow: 0 0 15px chocolate;
+        }
+        [align="right"]{
+          text-shadow: 0 0 15px darkgreen;
+          font-style: italic;
+        }
+        [title="img"]{
+            border: 2px solid blue;
+            border-radius: 50px;
+            padding: 15px;
+        }
+    </style>
+</head>
+<body>
+    <h1 align="left">TextAlign:Left</h1>
+    <h1 align="Center">TextAlign:Center</h1>
+    <h1 align="Right">TextAlign:Right</h1>  
+    
+    <img src="../Selector/img/2.jpeg" alt="" title="img">
+</body>
+</html>

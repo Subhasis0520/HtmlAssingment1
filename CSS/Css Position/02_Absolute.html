@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Absolute</title>
+<style>
+    #parent{
+        background-color: grey;
+        width: 600px;
+        height: 400px;
+        position: relative;
+        left: 200px;
+    }
+    .child{
+        width: 50px;
+        height: 50px;
+        border: 2px solid white;
+        margin: 5px;
+        position: absolute;
+    }
+    #child1{
+        background-color: red;
+        top: 200px;
+    }
+    #child2{
+        background-color: green;
+        left: 200px;
+    }
+</style>
+</head>
+<body>
+    <div id="parent">
+        <div class="child" id="child1"></div>
+        <div class="child" id="child2"></div>
+    </div>
+</body>
+</html>

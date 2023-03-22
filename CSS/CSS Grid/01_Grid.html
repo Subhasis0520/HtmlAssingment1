@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Grid</title>
+    <style>
+        div {
+            border: 2px solid black;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(4, 200px);
+            grid-gap:25px;
+            
+        }
+
+        .item{
+            border: 3px solid blue;
+            background-color: lightpink;
+        }
+        div>header{
+            background-color: aqua;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <header class="item">Header</header>
+        <nav class="item">Navigation</nav>
+        <section class="item">Section</section>
+        <aside class="item">Aside</aside>
+        <footer class="item">footer</footer>
+    </div>
+</body>
+
+</html>

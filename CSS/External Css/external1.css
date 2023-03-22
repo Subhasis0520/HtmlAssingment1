@@ -1,0 +1,10 @@
+body{
+    background-color: black;
+}
+table{
+    background: linear-gradient(90deg,orange,ghostwhite,green);
+    color: blue;
+    font-size: 40px;
+    font-style: italic;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}

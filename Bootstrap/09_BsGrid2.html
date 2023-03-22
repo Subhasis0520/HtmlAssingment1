@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Container</title>
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+    <!-- MDB -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.0.1/mdb.min.css" rel="stylesheet" />
+
+    <style>
+        col {
+            margin-left: 3px;
+            ;
+        }
+    </style>
+</head>
+
+<body class="py-5">
+
+    <!-- simple container  -->
+    <div class="container border border-success bg-info">
+        Hi I am a simple container
+    </div>
+
+    <!-- fluid container  -->
+    <div class="container-fluid mt-4 border border-success bg-info">
+        Hi I am a fulid container
+    </div>
+
+    <!-- row and colunms  -->
+    <div class="container bg-light mt-2">
+        <div class="row p-2 border border-warning">
+            <div class="col text-light bg-dark">This is a single column</div>
+        </div>
+        <div class="row p-2 border border-warning">
+            <div class="col mx-2 text-light bg-dark border border-warning">This is a first column</div>
+            <div class="col mx-2 text-light bg-dark border border-warning">This is a second column</div>
+        </div>
+        <div class="row p-2 border border-warning">
+            <div class="col mx-2 text-light bg-dark border border-warning">This is a first column</div>
+            <div class="col mx-2 text-light bg-dark border border-warning">This is a second column</div>
+            <div class="col mx-2 text-light bg-dark border border-warning">This is a 3rd column</div>
+            <div class="col mx-2 text-light bg-dark border border-warning">This is a 4th column</div>
+        </div>
+        <div class="row p-2 border border-warning">
+            <div class="col mx-2 text-light bg-dark border border-warning">This is a first column</div>
+            <div class="col mx-2 text-light bg-dark border border-warning">This is a second column</div>
+            <div class="col mx-2 text-light bg-dark border border-warning">This is a 3rd column</div>
+            <div class="col mx-2 text-light bg-dark border border-warning">This is a 4th column</div>
+            <div class="col mx-2 text-light bg-dark border border-warning">This is a 5th column</div>
+            <div class="col mx-2 text-light bg-dark border border-warning">This is a 6th column</div>
+        </div>
+        <div class="row p-2 border border-warning">
+            <div class="col-4 text-light bg-dark border border-warning">This is a first column</div>
+            <div class="col-4 text-light bg-dark border border-warning">This is a second column</div>
+            <div class="col-4 text-light bg-dark border border-warning">This is a 3rd column</div>
+            <div class="col-4 text-light bg-dark border border-warning">This is a 4th column</div>
+            
+        </div>
+        <div class="row p-2 border border-warning">
+            <div class="col-5  text-light bg-dark border border-warning">This is a first column</div>
+            <div class="col-4  text-light bg-dark border border-warning">This is a second column</div>
+            <div class="col-3  text-light bg-dark border border-warning">This is a 3rd column</div>
+        </div>
+
+        <!-- responsive layout  -->
+        <div class="row p-2 border border-warning">
+            <div class="col-sm-6 col-md-4 col-lg-3 text-light bg-dark border border-warning">This is a first column</div>
+            <div class="col-sm-6 col-md-4 col-lg-3 text-light bg-dark border border-warning">This is a second column</div>
+            <div class="col-sm-6 col-md-4 col-lg-3 text-light bg-dark border border-warning">This is a 3rd column</div>
+        </div>
+
+        <div class="row p-2 border border-warning">
+            <div class="col-9  text-light bg-dark border border-warning">This is a first column
+                <div class="row">
+                    <div class="col-3 text-warning bg-dark border border-info">col3</div>
+                    <div class="col-3 text-warning bg-dark border border-info">col3</div>
+                    <div class="col-3 text-warning bg-dark border border-info">col3</div>
+                    <div class="col-3 text-warning bg-dark border border-info">col3</div>
+                </div>
+            </div>
+            <div class="col-3  text-light bg-dark border border-warning">This is a second column</div>
+        </div>
+    </div>
+
+
+
+    <!-- MDB -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.0.1/mdb.min.js"></script>
+</body>
+
+</html>

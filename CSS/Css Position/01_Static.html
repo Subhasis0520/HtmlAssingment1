@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <title>Static & Relative</title>
+ <style>
+    div{
+        width: 150px;
+        height: 100px;
+        border: 2px solid blueviolet;
+        margin-top: 8px;
+    }
+    #static:hover{
+        background: linear-gradient(45deg,red,black);
+        position: static;
+        left: 200px;
+    }
+    #relative:hover{
+        background: linear-gradient(45deg,midnightblue,mintcream);
+        position: relative;
+        left: 200px;
+        top: 100px;
+    }
+ </style>
+</head>
+<body>
+    <div id="static"></div>
+    <div id="relative"></div>
+</body>
+</html>

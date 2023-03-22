@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Input</title>
+
+    <script>
+        function Input(){
+        let a = prompt("Enter the a value");  // using prompt() function we take the 
+        let b = prompt("Enter the b value");  //  user input that is string.
+
+        let result = a+b;  // it will not return number value , it concat like string
+        console.log(result, typeof result);
+        console.log(typeof a);
+        console.log(typeof b);
+        }
+       // Input();
+
+        function AddUsingInput(){
+            let a = Number(prompt("enter the value of a"));  // Number() function is used for typecasting
+            let b = Number(prompt("enter the value of b"));  // to change string to integer
+            let res = a+b;                                   // It is known as type conversion
+            console.log(a);
+            console.log(b);
+            console.log(`${a} + ${b} = ${res}`); //concat 
+        }
+        AddUsingInput();
+    </script>
+</head>
+<body>
+    <h2>User input using prompt() function</h2>
+</body>
+</html>

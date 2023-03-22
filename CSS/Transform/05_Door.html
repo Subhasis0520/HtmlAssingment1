@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Door</title>
+    <style>
+        body {
+            margin: 150px 0 0 400px;
+        }
+
+        #main-container {
+            width: 350px;
+            height: 250px;
+            border: 2px solid magenta;
+            position: relative;
+
+        }
+
+        #left {
+            background-color: brown;
+            width: 50%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            transform: perspective(400px) rotateY(0);
+            transition: all 5s;
+            transform-origin: left;
+        }
+
+        #right {
+            background-color: brown;
+            width: 50%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            right: 0;
+            transform-origin: right;
+            transform: perspective(400px) rotateY(0);
+            transition: all 5s;
+        }
+
+        #main-container img {
+            width: inherit;
+            height: inherit;
+        }
+
+        #main-container:hover #left {
+            transform: perspective(400px) rotateY(90deg);
+        }
+
+        #main-container:hover #right {
+            transform: perspective(400px) rotateY(-90deg);
+        }
+       
+    </style>
+</head>
+
+<body>
+    <div id="main-container">
+        <img src="https://tse1.mm.bing.net/th?id=OIP.QOqTcI5zp2L5GAZDpgf4ogHaFK&pid=Api&P=0" alt="">
+        <div id="left"></div>
+        <div id="right"></div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Round</title>
+    <style>
+        div {
+            height: 100px;
+            width: 100px;
+            position: relative;
+            border: 5px solid blue;
+            background: linear-gradient(45deg,lightblue,lightgreen);
+            animation-name: move;
+            animation-duration: 6s;
+            animation-timing-function: linear;
+            animation-delay: 2s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate-reverse;
+        }
+        @keyframes move {
+            0%,100%{
+               top: 0;
+               left: 0;
+               filter: hue-rotate(45deg);
+            }
+            25%{
+                top: 0;
+               left: 300px;
+               filter: hue-rotate(90deg);
+            }
+            50%{
+                top: 300px;
+               left: 300px;
+               filter: hue-rotate(135deg);
+            }
+            75%{
+                top: 300px;
+               left: 0px;
+               filter: hue-rotate(180deg);
+            }
+            
+        }
+    </style>
+</head>
+
+<body>
+    <div></div>
+</body>
+
+</html>

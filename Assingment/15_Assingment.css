@@ -1,0 +1,144 @@
+body {
+    background-color: black;
+    text-align: center;
+}
+
+a {
+    color: ghostwhite;
+    padding: 10px;
+    text-decoration: none;
+    font-size: 25px;
+
+}
+
+.a {
+    color: hotpink;
+    font-family: 'Lobster', cursive;
+}
+
+img {
+    width: 250px;
+    height: 200px;
+    padding: 25px;
+
+}
+
+#content {
+    color: ghostwhite;
+    text-align: center;
+}
+
+#about {
+    text-align: left;
+}
+#info{
+    text-shadow: 0 0 15px greenyellow;
+}
+#vitems{
+    text-shadow: 0 0 15px olive;
+}
+
+#start {
+    background: linear-gradient(50deg, lightgreen, royalblue);
+    color: ghostwhite;
+    text-shadow: 0 0 12px orangered;
+    border-radius: 30px;
+    padding: 10px;
+    font-style: italic;
+}
+
+#nav {
+    text-decoration: none;
+    padding-right: 10px;
+    margin: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+
+}
+
+.a:hover {
+    background: linear-gradient(45deg, lightgreen, orange);
+    border-radius: 50px;
+    text-decoration: underline;
+    color: red;
+}
+
+#add {
+    color: blueviolet;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#btn {
+    text-decoration: none;
+    height: 10px;
+    width: 30px;
+    color: ghostwhite;
+}
+
+#btn:hover {
+
+    color: maroon;
+    text-decoration: underline;
+}
+
+button {
+    background: linear-gradient(45deg, rgb(131, 45, 189), rgb(10, 51, 147));
+    border-radius: 50px;
+}
+
+#content {
+    color: coral;
+    text-align: center;
+}
+
+#info {
+    text-align: left;
+}
+
+#veg_content {
+    color: white;
+    text-align: center;
+    background-color: red;
+
+}
+
+#Nv_content {
+    background-color: blue;
+    color: white;
+    text-shadow: 0 0 15px lightgreen;
+}
+
+#dsrts {
+    background: linear-gradient(45deg, orange, white);
+}
+
+h2 {
+    text-align: left;
+    text-shadow: 0 0 15px red;
+}
+
+td {
+    color: rgb(183, 75, 21);
+    background-color: burlywood;
+    margin: 4px;
+}
+
+#ord {
+    color: aqua;
+    text-align: left;
+    margin-left: 20px;
+
+}
+
+#ord:hover {
+    text-decoration: none;
+    color: greenyellow;
+
+}
+
+table {
+    /* background-color: burlywood; */
+    border: 2px solid blue;
+    border-collapse: collapse;
+
+}

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <title>Register Form</title>
+   <style>
+    body{
+        background-color: rgb(148, 29, 49);
+    }
+    fieldset{
+        background: linear-gradient(90deg,maroon,rgb(79, 3, 16));
+        color: ghostwhite;
+        width: fit-content;
+        padding: 50px;
+        margin-left: 20%;
+        margin-top: 6%;
+    }
+    th{
+    font-size: 35px;
+    text-align: left;
+    }
+    td{
+        height: 40px;
+        font-size: 25px;
+    }
+    button{
+        width: 600px;
+        height: 40px;
+        padding-bottom: 5px;
+        font-size: 25px;
+        font-weight: bolder;
+    }
+    .abc{
+        height: 25px;
+        width: 300px;
+    }
+    select{
+        font-size: 25px;
+    }
+   </style>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <table>
+                <tr>
+                    <th>Name:</th>
+                    <td><input type="text" placeholder="your name" class="abc"></td>
+                </tr>
+                <tr>
+                    <th>Email:</th>
+                    <td><input type="email" placeholder="your email" class="abc"></td>
+                </tr>
+                <tr>
+                    <th>Password:</th>
+                    <td><input type="password" class="abc"></td>
+                </tr>
+                <tr>
+                    <th>Phone Number:</th>
+                    <td><input type="number" class="abc"></td>
+                </tr>
+                <tr>
+                    <th>Gender:</th>
+                    <td>
+                       Male: <input type="radio" name="gender">
+                       Female: <input type="radio" name="gender">
+                      Other: <input type="radio" name="gender">
+                    </td>
+                </tr>
+                <tr>
+                    <th>language</th>
+                    <td>
+                        <select name="lang">
+                            <option value="">Select language</option>
+                            <option value="">Java</option>
+                            <option value="">Python</option>
+                            <option value="">Web-tech</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <th>Zip Code:</th>
+                    <td><input type="number" name="pin" class="abc"></td>
+                </tr>
+                <tr>
+                    <th>About:</th>
+                    <td><textarea name="" placeholder="Write about yourself..." cols="30" rows="3"></textarea></td>
+                </tr>
+                <tr>
+                    <th colspan="3"><button>Register</button></th>
+                </tr>
+            </table>
+        </fieldset>
+    </form>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Animation begin</title>
+    <style>
+        div{
+            height: 200px;
+            width: 300px;
+            border: 2px solid black;
+            margin-top: 200px;
+            margin-left: 300px;
+            background: linear-gradient(45deg,lightblue,lightgreen);
+            animation-name: rotate;
+            animation-duration: 5s;
+            animation-delay: 2s;
+            animation-timing-function: ease-in-out;
+            animation-iteration-count: infinite;
+        }
+        @keyframes rotate {
+            from{
+              transform: rotateY(90deg);
+            }
+            to{
+                transform: rotateY(360deg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+     <div></div>
+</body>
+
+</html>
